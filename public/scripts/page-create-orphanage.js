@@ -90,6 +90,16 @@ function toggleSelect(event) {
     const input = document.querySelector('[name="open_on_weekends"]')
 
     input.value = button.dataset.value
+}
 
+function validate(event) {
+    //validar se lat e lng estao preenchidos / desafio 
+    
+    const needsLatAndLng = false;            //true ou false
 
+    if (needsLatAndLng) {
+        event.preventDefault()
+        alert('Selecione um ponto no mapa')
+    }
+    
 }
